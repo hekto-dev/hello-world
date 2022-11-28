@@ -1,0 +1,27 @@
+{
+  "hekto": {
+    "//": "a comment",
+    "version": "0.1"
+  },
+  "id": "hello-world",
+  "models": {
+    "version": "0.1",
+    "input": {
+      "name": "string"
+    },
+    "output": {
+      "greeting": "string"
+    }
+  },
+  "actions": {
+    "create": "terraform apply",
+    "update": "terraform apply",
+    "diff": "terraform plan",
+    "destroy": "terraform destroy"
+  },
+  "configuration": {
+    "engine": "terraform",
+    "input": "file://input.tf",
+    "output": "./output.json"
+  }
+}
